@@ -17,7 +17,7 @@ Module MultiplicationTableLC
 
         Console.WriteLine("Press Q at any time to quit.")
 
-
+        'The multiplaction table was done in 10 lines of code, the rest of it is making sure the user can't break it. 
         Do
             Do
                 Console.BackgroundColor = ConsoleColor.Black
@@ -46,6 +46,7 @@ Module MultiplicationTableLC
 
             Console.WriteLine($"Enjoy your  {n}  *  {n}  multiplication table! {vbNewLine}")
 
+            'This nested for loop writes the multiplication table horizontally line by line.
             For column = 1 To n
                 For row = 1 To n
                     data(row, column) = row * column
