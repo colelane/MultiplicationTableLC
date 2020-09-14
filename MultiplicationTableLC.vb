@@ -27,7 +27,7 @@ Module MultiplicationTableLC
                     n = CInt(m)
                     If n < 13 And n > 0 Then
                         goodData = True
-                    ElseIf n >= 13 Or n <= 0 Then
+                    Else
                         Console.Clear()
                         Console.BackgroundColor = ConsoleColor.DarkMagenta
                         Console.WriteLine("Only 1 - 12 will work! ")
