@@ -30,7 +30,7 @@ Module MultiplicationTableLC
                     Else
                         Console.Clear()
                         Console.BackgroundColor = ConsoleColor.DarkMagenta
-                        Console.WriteLine("Only 1 - 12 will work! ")
+                        Console.WriteLine("Only 1 - 12 will work! ") ' -- why -TJR
                         goodData = False
                     End If
                 Catch
@@ -50,7 +50,7 @@ Module MultiplicationTableLC
             For column = 1 To n
                 For row = 1 To n
                     data(row, column) = row * column
-                    Console.Write(data(row, column) & vbTab)
+                    Console.Write(data(row, column) & vbTab) ' Use pad left to keep consistent column width - TJR
                 Next
                 Console.WriteLine()
             Next
@@ -63,7 +63,5 @@ Module MultiplicationTableLC
 
         Loop
     End Sub
-
-
 
 End Module
